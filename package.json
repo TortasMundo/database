@@ -1,0 +1,27 @@
+{
+  "name": "database",
+  "version": "1.0.0",
+  "description": "Tortas Mundo Database",
+  "main": "index.js",
+  "scripts": {
+    "migrate": "knex migrate:latest --env development && knex migrate:latest --env test",
+    "seed": "knex seed:run --env development && knex seed:run --env test",
+    "start": "npm run migrate && npm run seed",
+    "start:dev": "npm run migrate && npm run seed",
+    "migrate:create": "knex migrate:make --knexfile=knexfile.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TortasMundo/database.git"
+  },
+  "author": "Alonso A. Ortega",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TortasMundo/database/issues"
+  },
+  "homepage": "https://github.com/TortasMundo/database#readme",
+  "dependencies": {
+    "knex": "^0.14.6",
+    "pg": "^7.4.1"
+  }
+}
