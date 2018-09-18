@@ -10,7 +10,6 @@ exports.up = function(knex, Promise) {
     table.string('lomoQuantity').notNullable()
     table.string('especialQuantity').notNullable()
     table.string('refrescosQuantity').notNullable()
-    table.string('productUnitPrice').notNullable()
     table.string('total').notNullable()
     table.enu('status', statuses).notNullable().defaultTo('STARTED')
     table.boolean('paidOnline').notNullable().defaultTo(false)
