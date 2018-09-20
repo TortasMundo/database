@@ -17,7 +17,8 @@ exports.up = function(knex, Promise) {
     table.string('customerLocationLatitude').notNullable()
     table.string('customerLocationLongitude').notNullable()
     table.string('delivererLocationLatitude').notNullable()
-    table.string('delivererLocationLongitude').notNullable()
+    table.string('delivererLocationLongitude')
+    table.string('notes')
   })
 };
 
