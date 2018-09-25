@@ -19,6 +19,7 @@ exports.up = function(knex, Promise) {
     table.string('delivererLocationLatitude').notNullable()
     table.string('delivererLocationLongitude')
     table.string('notes')
+    table.timestamp('orderedAt').notNullable().defaultTo(knex.fn.now())
   })
 };
 
