@@ -1,6 +1,6 @@
 
 exports.up = function(knex, Promise) {
-  const statuses = ['ORDERED', 'COOKING', 'DELIVERING', 'ARRIVED', 'DELIVERED', 'CANCELED_BY_CUSTOMER', 'CANCELED_BY_DELIVERER']
+  const statuses = ['ORDERED', 'COOKING', 'COOKED', 'DELIVERING', 'ARRIVED', 'DELIVERED', 'CANCELED_BY_CUSTOMER', 'CANCELED_BY_DELIVERER']
 
   return knex.schema.createTable('orders', table => {
     table.increments('id').primary().unsigned().notNullable()
