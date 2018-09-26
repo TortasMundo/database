@@ -7,7 +7,7 @@ exports.up = function(knex, Promise) {
     table.string('manager_phone_number').notNullable()
     table.string('manager_email').notNullable()
     table.string('address_1').notNullable()
-    table.string('address_2').notNullable()
+    table.string('address_2')
     table.string('city').notNullable()
     table.string('state').notNullable()
     table.string('country').notNullable()
