@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/TortasMundo/database#readme",
   "dependencies": {
+    "code-cleanliness-ratio": "^1.0.3",
     "knex": "^0.14.6",
     "pg": "^7.4.1"
   }
